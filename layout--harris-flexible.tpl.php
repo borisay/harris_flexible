@@ -72,41 +72,41 @@
       <div class="l-middle row">
 
         <?php if (!empty($content['sidebar2']) && (!empty($content['sidebar']))): ?>
-          <main class="l-content col-md-6 col-md-push-3" role="main" aria-label="<?php print t('Main content'); ?>">
+          <main class="l-content col-lg-6 col-lg-push-3" role="main" aria-label="<?php print t('Main content'); ?>">
             <?php print $content['content']; ?>
           </main>
 
-          <div class="l-sidebar l-sidebar-first col-md-3 col-md-pull-6">
+          <div class="l-sidebar l-sidebar-first col-lg-3 col-lg-pull-6">
             <?php print $content['sidebar']; ?>
           </div>
 
-          <div class="l-sidebar l-sidebar-second col-md-3">
+          <div class="l-sidebar l-sidebar-second col-lg-3">
             <?php print $content['sidebar2']; ?>
           </div>
         <?php endif; ?>
 
         <?php if (empty($content['sidebar2']) && (!empty($content['sidebar']))): ?>
-        <main class="l-content col-md-9 col-md-push-3" role="main" aria-label="<?php print t('Main content'); ?>">
+        <main class="l-content col-lg-9 col-lg-push-3" role="main" aria-label="<?php print t('Main content'); ?>">
           <?php print $content['content']; ?>
         </main>
 
-        <div class="l-sidebar l-sidebar-first col-md-3 col-md-pull-9">
+        <div class="l-sidebar l-sidebar-first col-lg-3 col-lg-pull-9">
           <?php print $content['sidebar']; ?>
         </div>
         <?php endif; ?>
 
         <?php if (!empty($content['sidebar2']) && (empty($content['sidebar']))): ?>
-          <main class="l-content col-md-9" role="main" aria-label="<?php print t('Main content'); ?>">
+          <main class="l-content col-lg-9" role="main" aria-label="<?php print t('Main content'); ?>">
             <?php print $content['content']; ?>
           </main>
 
-          <div class="l-sidebar l-sidebar-second col-md-3">
+          <div class="l-sidebar l-sidebar-second col-lg-3">
             <?php print $content['sidebar2']; ?>
           </div>
         <?php endif; ?>
 
         <?php if (empty($content['sidebar2']) && (empty($content['sidebar']))): ?>
-          <main class="l-content col-md-12" role="main" aria-label="<?php print t('Main content'); ?>">
+          <main class="l-content col-lg-12" role="main" aria-label="<?php print t('Main content'); ?>">
             <?php print $content['content']; ?>
           </main>
         <?php endif; ?>
@@ -130,3 +130,4 @@
     </footer>
   <?php endif; ?>
 </div><!-- /.layout--harris-flexible -->
+
